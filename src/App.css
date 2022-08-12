@@ -40,3 +40,18 @@ h5{
     font-size: 16px;
     letter-spacing: 1px;
 }
+
+
+.App{
+    width: 100%;
+    height: 100vh;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+#root{
+    width: 100%;
+    height: 100vh;
+}
