@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./Components/Partials/Navbar/Navbar";
 import Section from "./Components/Section/Section";
+import MenuDecoration from "./Components/Partials/MenuDecoration/MenuDecoration";
 import Home from "./Components/Home/Home";
 import Destination from "./Components/Destination/Destination";
 import Crew from "./Components/Crew/Crew";
@@ -17,9 +18,11 @@ function App() {
         <Navbar
           navList={mainMenu}
           onClick={setSection}
-          liClass="mainMenuLi"
-          ulClass="mainMenuUl"
-        />
+          liClass={["mainMenuLi nav_text"]}
+          ulClass="mainMenuUl" 
+        >
+          <MenuDecoration/>
+        </Navbar>
 
         {(() => {
           switch (section) {

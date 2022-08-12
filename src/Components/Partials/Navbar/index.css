@@ -1,11 +1,23 @@
+.nav{
+    padding-top: 40px;
+    display:flex;
+    justify-content:space-between;
+}
 .mainMenuUl{
+    list-style: none;
+    width:777px;
     height: 96px;
     color: white;
     display:flex;
     align-items: center;
-    justify-content: flex-end;
-    gap: 48px;
+    justify-content: flex-start;
+    gap: 30px;
+    background-color:rgba(222, 222, 222, 0.088);
+    backdrop-filter: blur(10px);
 }
 .mainMenuLi{
-    color: yellow;
+    margin: 0 40px;
+    filter: blur(0px);
+    cursor:pointer;
+    text-shadow: 1px 1px 2px rgb(34, 32, 47);
 }

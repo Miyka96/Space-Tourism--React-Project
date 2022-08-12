@@ -18,7 +18,7 @@ const Destination = () => {
         onClick={setDestination}
         liClass="destinationLi"
         ulClass="destinationUl"
-      />
+      ></Navbar>
 
       {(() => {
         switch (destination) {

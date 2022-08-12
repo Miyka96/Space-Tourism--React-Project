@@ -1,0 +1,18 @@
+.decoration{
+    display: flex;
+    align-items: center;
+    flex-grow:2;
+}
+.icon{
+    margin-left: 55px;
+}
+.line_wrapper{
+    margin-left:55px;
+    margin-right:25px;
+    flex-grow:2;
+}
+.line{
+    height:1px;
+    width:100%;
+    background-color: #ffffff4d;
+}
