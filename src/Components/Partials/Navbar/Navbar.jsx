@@ -1,13 +1,12 @@
 import './index.css'
 
-const Navbar = ({onClick}) => {
-    const navList = ['Home','Destination','Crew','Technology'];
+const Navbar = ({onClick, navList, liClass, ulClass}) => {
     const callback = (e) => {
         onClick(e.target.textContent)
     }
     return(
-        <ul className="navbar">
-            {navList.map((navEl) => (<li className="navEl" onClick={callback}>{navEl}</li>) )}
+        <ul className={ulClass}>
+            {navList.map((navEl) => (<li key={navEl} className={liClass} onClick={callback}>{navEl}</li>) )}
         </ul>
     )
 }

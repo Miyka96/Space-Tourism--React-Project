@@ -1,4 +1,4 @@
-.navbar{
+.mainMenuUl{
     height: 96px;
     color: white;
     display:flex;
@@ -6,6 +6,6 @@
     justify-content: flex-end;
     gap: 48px;
 }
-.navEl{
-
+.mainMenuLi{
+    color: yellow;
 }
