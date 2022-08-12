@@ -1,9 +1,16 @@
+import { useState } from 'react';
 import './App.css';
 import Navbar from './Components/Partials/Navbar/Navbar';
+import Section from './Components/Section/Section';
 function App() {
+
+  const [section, setSection] = useState('Home');
+
   return (
     <div className="App">
-      <Navbar/>
+      <Section sectionId={section}>
+        <Navbar onClick={setSection}/>
+      </Section>
     </div>
   );
 }

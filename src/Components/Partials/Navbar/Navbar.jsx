@@ -1,8 +1,16 @@
 import './index.css'
 
-const Navbar = () => {
+const Navbar = ({onClick}) => {
+    const callback = (e) => {
+        onClick(e.target.textContent)
+    }
     return(
-        <p>navbar</p>
+        <ul>
+            <li onClick={callback}>Home</li>
+            <li onClick={callback}>Destination</li>
+            <li onClick={callback}>Crew</li>
+            <li onClick={callback}>Technology</li>
+        </ul>
     )
 }
 
