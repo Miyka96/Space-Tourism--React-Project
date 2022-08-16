@@ -12,7 +12,7 @@
     flex-grow:2;
 }
 .line{
-    height:1px;
+    height:0.8px;
     width:100%;
     background-color: #ffffff4d;
 }
