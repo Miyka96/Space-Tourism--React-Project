@@ -7,7 +7,7 @@ const Navbar = ({ children, onClick, navList, liClass, ulClass}) => {
     }
 
     return(
-        <div className="nav">
+        <div className="nav"> 
             {children}
             <ul className={ulClass}>
             {navList.map((navEl) => (<li key={navEl} className={[liClass]}  onClick={callback}>{navEl}</li>) )}

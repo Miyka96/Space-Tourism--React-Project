@@ -1,9 +1,11 @@
-import './index.css'
+import "./index.css";
 
-const Home = () => {
-    return(
-        <p>Home</p>
-    )
-}
+const Home = ({children}) => {
+  return (
+    <div className="animate__animated animate__fadeIn">
+        {children}
+    </div>
+  );
+};
 
 export default Home;

@@ -1,0 +1,16 @@
+.mainBtn{
+    width:274px;
+    height: 274px;
+    border-radius:100%;
+    background-color:white;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'Bellefair', serif;
+    font-size: 32px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.mainBtn:hover{
+    -webkit-box-shadow: 0px 0px 0px 60px #24262f; 
+    box-shadow: 0px 0px 0px 60px #24262f;
+}
