@@ -8,7 +8,9 @@ import Pilot from "../Crew/Pilot/Pilot";
 import Specialist from "../Crew/Specialist/Specialist";
 
 const Crew = () => {
-  const crewMenu = ["Commander", "Specialist", "Pilot", "Engineer"];
+  const data = require("../../data.json");
+  const crewData = data.crew;
+  const crewMenu = crewData.map(el => el.role);
   const [crew, setCrew] = useState("Commander");
 
   return (
@@ -24,11 +26,11 @@ const Crew = () => {
         switch (crew) {
           case "Commander":
             return <Commander />;
-          case "Specialist":
+          case "Mission Specialist":
             return <Specialist />;
           case "Pilot":
             return <Pilot />;
-          case "Engineer":
+          case "Flight Engineer":
             return <Engineer />;
 
           default:

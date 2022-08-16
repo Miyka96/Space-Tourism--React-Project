@@ -7,8 +7,10 @@ import Spaceport from '../Technology/Spaceport/Spaceport';
 import Veichle from '../Technology/Veichle/Veichle';
 
 const Technology = () => {
-    const technologyMenu = ["Capsule", "Spaceport", "Veichle"];
-    const [technology, setTechnology] = useState("Capsule");
+    const data= require('../../data.json');
+    const technologyData= data.technology
+    const technologyMenu = technologyData.map(el=>el.name);
+    const [technology, setTechnology] = useState("Launch vehicle");
 
     return(
         <Section sectionId={technology}>
@@ -21,11 +23,11 @@ const Technology = () => {
   
         {(() => {
           switch (technology) {
-            case "Capsule":
+            case "Space capsule":
               return <Capsule />;
             case "Spaceport":
               return <Spaceport />;
-            case "Veichle":
+            case "Launch vehicle":
               return <Veichle />;
   
             default:

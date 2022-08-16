@@ -8,8 +8,11 @@ import Europa from "../Destination/Europa/Europa";
 import Titan from "../Destination/Titan/Titan";
 
 const Destination = () => {
-  const destinationMenu = ["Moon", "Mars", "Europa", "Titan"];
+  const data = require("../../data.json");
+  const destinations = data.destinations;
+  const destinationMenu= destinations.map(el => el.name);
   const [destination, setDestination] = useState("Moon");
+
 
   return (
     <Section sectionId={destination}>
