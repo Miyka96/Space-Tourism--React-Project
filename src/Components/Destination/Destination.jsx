@@ -16,14 +16,13 @@ const Destination = () => {
 
   return (
     <Section sectionId={destination}>
-      <Navbar
-        navList={destinationMenu}
-        onClick={setDestination}
-        liClass="destinationLi nav_text"
-        ulClass="destinationUl"
-        currentDestination= {destination}
-      ></Navbar>
-
+        <Navbar
+          navList={destinationMenu}
+          onClick={setDestination}
+          liClass="destinationLi nav_text"
+          ulClass="destinationUl"
+          currentDestination= {destination}
+        ></Navbar>
       {(() => {
         switch (destination) {
           case "Moon":

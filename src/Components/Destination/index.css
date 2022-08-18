@@ -1,7 +1,10 @@
 #Destination{
     width: 100%;
     height: 100%;
-    background-image: url('../../Assets/stars2.jpg');
+    background-image: url('../../Assets/stars-gd92b9599f_1920.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.planetImg{
+    width: 400px;
 }

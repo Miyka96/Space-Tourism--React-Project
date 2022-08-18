@@ -1,9 +1,72 @@
 .grow{
     flex-grow: 2
 }
+.section__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+}
 #Moon, #Mars , #Europa, #Titan{
     display:flex;
-    justify-content:flex-start;
-    align-items:flex-start;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
     padding: 0 40px;
+}
+.subheading{
+    padding: 60px 0;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing:3px;
+}
+.info_box{
+    width:400px;
+}
+.info_box>h1{
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.info_box>p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0 10px;
+    font-weight: 100;
+    color: var(--light);
+    margin-bottom: 20px;
+}
+
+.info_box>.line_wrapper{
+    width: 100%;
+    margin: 0;
+}
+
+.infoTravel_box{
+    padding-top: 20px;
+    padding-left: 10px;
+    display:flex;
+    width: 100%;
+    gap: 50px;
+}
+
+.infoTravel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.infoTravel_heading{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    color: var(--light);
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.infoTravel_text{
+    font-family: 'Bellefair', serif;
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+    text-transform: uppercase;
 }
