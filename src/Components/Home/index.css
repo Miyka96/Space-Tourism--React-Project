@@ -4,4 +4,26 @@
     background-image: url('../../Assets/home/background-home-desktop.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    display:flex;
+    flex-direction: column;
+}
+.homeSection{
+    overflow: hidden;
+    flex-grow: 2;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 165px;
+}
+.text_wrapper{
+    width: 50%;
+}
+.text_wrapper>h5{
+    color: var(--light);
+    font-weight: 100;
+}
+.text_wrapper>p{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
 }

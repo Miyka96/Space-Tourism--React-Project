@@ -5,7 +5,7 @@
 }
 .mainMenuUl{
     list-style: none;
-    width:777px;
+    max-width:777px;
     height: 96px;
     color: white;
     display:flex;
@@ -16,8 +16,33 @@
     backdrop-filter: blur(10px);
 }
 .mainMenuLi{
-    margin: 0 40px;
+    padding: 0 40px;
     filter: blur(0px);
     cursor:pointer;
     text-shadow: 1px 1px 2px rgb(34, 32, 47);
+    line-height: 95px;
+    position: relative;
+}
+.mainMenuLi:hover::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #85868b;
+}
+.mainMenuLi.active::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    
 }

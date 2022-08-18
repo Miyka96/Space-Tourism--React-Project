@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState} from "react";
 import "./App.css";
 import Navbar from "./Components/Partials/Navbar/Navbar";
 import Section from "./Components/Section/Section";
@@ -16,6 +16,7 @@ function App() {
     setSection("Destination");
   }
 
+
   return (
     <div className="App">
       <Section className="animate__animated animate__fadeIn" sectionId={section}>
@@ -23,7 +24,8 @@ function App() {
           navList={mainMenu}
           onClick={setSection}
           liClass={["mainMenuLi nav_text"]}
-          ulClass="mainMenuUl" 
+          ulClass="mainMenuUl"
+          currentSect= {section}
         >
           <MenuDecoration/>
         </Navbar>
