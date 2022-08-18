@@ -2,7 +2,11 @@ import './index.css';
 
 const Moon = () => {
     return(
-        <p>Moon</p>
+        <div className="section__wrapper grow">
+            <div className="planet_wrapper">
+                <p>Pick your Destination</p>
+            </div>
+        </div>
     )
 }
 

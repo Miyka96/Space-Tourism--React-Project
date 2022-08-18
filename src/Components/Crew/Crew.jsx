@@ -20,6 +20,7 @@ const Crew = () => {
         onClick={setCrew}
         liClass="crewLi"
         ulClass="crewUl"
+        currentCrew={crew}
       />
 
       {(() => {

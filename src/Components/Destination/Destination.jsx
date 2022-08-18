@@ -19,8 +19,9 @@ const Destination = () => {
       <Navbar
         navList={destinationMenu}
         onClick={setDestination}
-        liClass="destinationLi"
+        liClass="destinationLi nav_text"
         ulClass="destinationUl"
+        currentDestination= {destination}
       ></Navbar>
 
       {(() => {

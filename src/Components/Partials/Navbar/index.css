@@ -3,6 +3,7 @@
     display:flex;
     justify-content:space-between;
 }
+/* main menu list */
 .mainMenuUl{
     list-style: none;
     max-width:777px;
@@ -35,6 +36,41 @@
     background: #85868b;
 }
 .mainMenuLi.active::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    
+}
+/* destination list */
+.destinationUl{
+    display:flex;
+    gap: 30px;
+    list-style: none;
+}
+.destinationLi{
+    cursor:pointer;
+    text-shadow: 1px 1px 2px rgb(34, 32, 47);
+    line-height: 45px;
+    position: relative;
+}
+.destinationLi:hover::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #85868b;
+}
+.destinationLi.active::after{
     position: absolute;
     content: '';
     height: 2px;

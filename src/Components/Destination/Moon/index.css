@@ -1,0 +1,9 @@
+.grow{
+    flex-grow: 2
+}
+#Moon, #Mars , #Europa, #Titan{
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding: 0 40px;
+}
