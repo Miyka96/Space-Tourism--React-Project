@@ -10,7 +10,7 @@ const Technology = () => {
     const data= require('../../data.json');
     const technologyData= data.technology
     const technologyMenu = technologyData.map(el=>el.name);
-    const [technology, setTechnology] = useState("Launch vehicle");
+    const [technology, setTechnology] = useState("Launch-vehicle");
 
     return(
         <Section sectionId={technology}>
@@ -19,15 +19,16 @@ const Technology = () => {
           onClick={setTechnology}
           liClass="secondMenuLi nav_text"
           ulClass="destinationUl"
+          currentTechnology={technology}
         />
   
         {(() => {
           switch (technology) {
-            case "Space capsule":
+            case "Space-capsule":
               return <Capsule />;
             case "Spaceport":
               return <Spaceport />;
-            case "Launch vehicle":
+            case "Launch-vehicle":
               return <Veichle />;
   
             default:

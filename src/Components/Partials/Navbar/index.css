@@ -53,13 +53,13 @@
     gap: 30px;
     list-style: none;
 }
-.destinationLi{
+.secondMenuLi{
     cursor:pointer;
     text-shadow: 1px 1px 2px rgb(34, 32, 47);
     line-height: 45px;
     position: relative;
 }
-.destinationLi:hover::after{
+.secondMenuLi:hover::after{
     position: absolute;
     content: '';
     height: 2px;
@@ -70,7 +70,7 @@
     bottom: 0;
     background: #85868b;
 }
-.destinationLi.active::after{
+.secondMenuLi.active::after{
     position: absolute;
     content: '';
     height: 2px;

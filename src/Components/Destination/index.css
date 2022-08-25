@@ -23,7 +23,7 @@
     justify-items: center;
     align-items: center;
 }
-#Moon, #Mars , #Europa, #Titan, #Commander, #Mission-Specialist, #Flight-Engineer, #Pilot{
+#Moon, #Mars , #Europa, #Titan, #Commander, #Mission-Specialist, #Flight-Engineer, #Pilot, #Launch-vehicle, #Spaceport, #Space-capsule{
     display:flex;
     flex-direction: column;
     justify-content:space-around;
