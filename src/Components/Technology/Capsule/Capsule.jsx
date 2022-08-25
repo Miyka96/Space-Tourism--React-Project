@@ -15,7 +15,7 @@ const Capsule = () => {
             you entertained.
           </p>
         </div>
-        <div className="crew_wrapper">
+        <div className="img_wrapper">
           <img
             className="sectionImg"
             src={require("../../../Assets/technology/image-space-capsule-portrait.jpg")}

@@ -5,11 +5,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.crew_wrapper{
+.img_wrapper{
     height: 100%;
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
 }
 

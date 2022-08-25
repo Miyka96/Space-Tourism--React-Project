@@ -14,7 +14,7 @@ const Pilot = () => {
             64, and served as a station systems flight engineer.
           </p>
         </div>
-        <div className="crew_wrapper">
+        <div className="img_wrapper">
           <img
             className="sectionImg"
             src={require("../../../Assets/crew/image-victor-glover.png")}

@@ -14,7 +14,7 @@ const Specialist = () => {
             tourist.
           </p>
         </div>
-        <div className="crew_wrapper">
+        <div className="img_wrapper">
           <img
             className="sectionImg"
             src={require("../../../Assets/crew/image-mark-shuttleworth.png")}

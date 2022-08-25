@@ -13,7 +13,7 @@ const Commander = () => {
             third time as commander of Crew Dragon Demo-2.
           </p>
         </div>
-        <div className="crew_wrapper">
+        <div className="img_wrapper">
           <img
             className="sectionImg"
             src={require("../../../Assets/crew/image-douglas-hurley.png")}

@@ -15,7 +15,7 @@ const Veichle = () => {
             sight on the launch pad!
           </p>
         </div>
-        <div className="crew_wrapper">
+        <div className="img_wrapper">
           <img
             className="sectionImg"
             src={require("../../../Assets/technology/image-launch-vehicle-portrait.jpg")}
