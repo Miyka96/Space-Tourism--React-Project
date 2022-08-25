@@ -1,6 +1,9 @@
 .content__wrapper{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 6fr;
+    grid-template-rows: 1fr 6fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
 }
 .grow{
     flex-grow: 1;

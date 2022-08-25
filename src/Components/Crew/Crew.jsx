@@ -18,8 +18,8 @@ const Crew = () => {
       <Navbar
         navList={crewMenu}
         onClick={setCrew}
-        liClass="crewLi"
-        ulClass="crewUl"
+        liClass="secondMenuLi nav_text"
+        ulClass="destinationUl"
         currentCrew={crew}
       />
 
@@ -27,11 +27,11 @@ const Crew = () => {
         switch (crew) {
           case "Commander":
             return <Commander />;
-          case "Mission Specialist":
+          case "Mission-Specialist":
             return <Specialist />;
           case "Pilot":
             return <Pilot />;
-          case "Flight Engineer":
+          case "Flight-Engineer":
             return <Engineer />;
 
           default:

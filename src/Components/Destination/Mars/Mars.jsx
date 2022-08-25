@@ -5,7 +5,7 @@ const Mars = () => {
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
         <img
-          className="planetImg"
+          className="sectionImg"
           src={require("../../../Assets/destination/image-mars.png")}
         />
         <div className="info_box">

@@ -17,8 +17,8 @@ const Technology = () => {
         <Navbar
           navList={technologyMenu}
           onClick={setTechnology}
-          liClass="technologyLi"
-          ulClass="technologyUl"
+          liClass="secondMenuLi nav_text"
+          ulClass="destinationUl"
         />
   
         {(() => {

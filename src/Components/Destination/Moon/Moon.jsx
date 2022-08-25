@@ -5,7 +5,7 @@ const Moon = () => {
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
         <img
-          className="planetImg"
+          className="sectionImg"
           src={require("../../../Assets/destination/image-moon.png")}
         />
         <div className="info_box">

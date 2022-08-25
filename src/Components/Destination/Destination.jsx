@@ -19,7 +19,7 @@ const Destination = () => {
         <Navbar
           navList={destinationMenu}
           onClick={setDestination}
-          liClass="destinationLi nav_text"
+          liClass="secondMenuLi nav_text"
           ulClass="destinationUl"
           currentDestination= {destination}
         ></Navbar>
