@@ -4,10 +4,6 @@ const Titan = () => {
   return (
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
-        <img
-          className="sectionImg"
-          src={require("../../../Assets/destination/image-titan.png")}
-        />
         <div className="info_box">
           <h1>titan</h1>
           <p>
@@ -30,6 +26,12 @@ const Titan = () => {
               <div className="infoTravel_text">7 years</div>
             </div>
           </div>
+        </div>
+        <div className="img_wrapper">
+          <img
+            className="sectionImg"
+            src={require("../../../Assets/destination/image-titan.png")}
+          />
         </div>
       </div>
     </>

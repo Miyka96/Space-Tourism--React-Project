@@ -4,6 +4,12 @@ const Capsule = () => {
   return (
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
+      <div id="capsuleImg" className="img_wrapper">
+          <img
+            className="sectionImg" 
+            src={require("../../../Assets/technology/image-space-capsule-portrait.jpg")}
+          />
+        </div>
         <div className="info_box">
           <h3>THE TERMINOLOGY…</h3>
           <h1>SPACE CAPSULE</h1>
@@ -14,12 +20,6 @@ const Capsule = () => {
             includes a space gym, cinema, and plenty of other activities to keep
             you entertained.
           </p>
-        </div>
-        <div className="img_wrapper">
-          <img
-            className="sectionImg"
-            src={require("../../../Assets/technology/image-space-capsule-portrait.jpg")}
-          />
         </div>
       </div>
     </>

@@ -1,98 +1,233 @@
-#Destination{
-    width: 100%;
-    height: 100%;
-    background-image: url('../../Assets/stars-gd92b9599f_1920.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 40px;
+#Destination {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../Assets/stars-gd92b9599f_1920.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.sectionImg{
-    height: 100%;
-    object-fit: contain;
+.sectionImg {
+  height: 75%;
+  object-fit: contain;
 }
 
-.grow{
-    flex-grow: 2
+.grow {
+  flex-grow: 2;
 }
-.section__wrapper{
-    flex-grow: 2;
+.section__wrapper {
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 6fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+}
+#Moon,
+#Mars,
+#Europa,
+#Titan,
+#Commander,
+#Mission-Specialist,
+#Flight-Engineer,
+#Pilot,
+#Launch-vehicle,
+#Spaceport,
+#Space-capsule {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+  flex-grow: 1;
+}
+.subheading {
+  padding: 60px 0;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.info_box {
+  text-align: left;
+  padding: 100px 50px;
+  height: 100%;
+}
+.info_box > h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+.info_box > h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.611);
+}
+.info_box > p {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 0 10px;
+  font-weight: 100;
+  color: var(--light);
+  margin-bottom: 20px;
+}
+
+.info_box > .line_wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+.infoTravel_box {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+.infoTravel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infoTravel_heading {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  color: var(--light);
+  font-weight: 200;
+  text-transform: uppercase;
+}
+.infoTravel_text {
+  font-family: "Bellefair", serif;
+  font-size: 1rem;
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 1161px) {
+  .section__wrapper > .sectionImg {
+    height: 70%;
+  }
+  .info_box {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainMenuUl {
+    height:70px;
+    gap: 0;
+  }
+  .mainMenuLi{
+    padding: 0 25px;
+  }
+  .sectionImg{
+    height: 50%;
+  }
+  .section__wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 6fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 0px;
-    justify-items: center;
-    align-items: center;
-}
-#Moon, #Mars , #Europa, #Titan, #Commander, #Mission-Specialist, #Flight-Engineer, #Pilot, #Launch-vehicle, #Spaceport, #Space-capsule{
-    display:flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items:center;
-    padding: 0 40px;
-    flex-grow: 1;
-}
-.subheading{
-    padding: 60px 0;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-transform: uppercase;
-    letter-spacing:3px;
-}
-.info_box{
-    text-align: left;
-    padding: 100px 50px;
-    height: 100%;
-}
-.info_box>h1{
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-.info_box>h3{
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 10px;
+  }
+  .nav_text {
+    font-size: 13px;
+  }
+  .info_box {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .info_box > h1 {
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.611);
-}
-.info_box>p{
-    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .info_box > h3 {
     font-size: 1rem;
-    line-height: 28px;
+    text-transform: uppercase;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.611);
+  }
+  .info_box > p {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
     padding: 0 10px;
     font-weight: 100;
     color: var(--light);
     margin-bottom: 20px;
-}
+  }
 
-.info_box>.line_wrapper{
+  .info_box > .line_wrapper {
     width: 100%;
     margin: 0;
-}
+  }
 
-.infoTravel_box{
-    padding-top: 20px;
-    padding-left: 10px;
-    display:flex;
+  .infoTravel_box {
+    display: flex;
     width: 100%;
-    gap: 50px;
-}
+    justify-content: center;
+  }
 
-.infoTravel{
+  .infoTravel {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-.infoTravel_heading{
-    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .infoTravel_heading {
+    font-family: "Barlow Condensed", sans-serif;
     font-size: 1rem;
     color: var(--light);
     font-weight: 200;
     text-transform: uppercase;
-}
-.infoTravel_text{
-    font-family: 'Bellefair', serif;
+  }
+  .infoTravel_text {
+    font-family: "Bellefair", serif;
     font-size: 1rem;
     color: white;
     font-weight: 200;
     text-transform: uppercase;
+  }
+  #Space-capsule,#Spaceport,#Launch-vehicle{
+    padding: 0;
+  }
+  #Space-capsule .img_wrapper{
+    width: 100%;
+    height: 250px;
+  }
+  #Spaceport .img_wrapper{
+    width: 100%;
+    height: 250px;
+  }
+  #Launch-vehicle .img_wrapper{
+    width: 100%;
+    height: 250px;
+  }
+  #Space-capsule .sectionImg{
+    display:none;
+  }
+  #Spaceport .sectionImg{
+    display:none;
+  }
+  #Launch-vehicle .sectionImg{
+    display:none;
+  }
+  #capsuleImg, #spaceportImg, #veichleImg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+  }
+  #capsuleImg{
+    background-image: url("../../Assets/technology/image-space-capsule-landscape.jpg");
+  }
+  #spaceportImg{
+    background-image: url("../../Assets/technology/image-spaceport-landscape.jpg")
+  }
+  #veichleImg{
+    background-image: url("../../Assets/technology/image-launch-vehicle-landscape.jpg")
+  }
+
 }

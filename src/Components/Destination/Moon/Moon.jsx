@@ -4,10 +4,6 @@ const Moon = () => {
   return (
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
-        <img
-          className="sectionImg"
-          src={require("../../../Assets/destination/image-moon.png")}
-        />
         <div className="info_box">
           <h1>Moon</h1>
           <p>
@@ -32,6 +28,13 @@ const Moon = () => {
             </div>
           </div>
         </div>
+        <div className="img_wrapper">
+          <img
+            className="sectionImg"
+            src={require("../../../Assets/destination/image-moon.png")}
+          />
+        </div>
+        
       </div>
     </>
   );

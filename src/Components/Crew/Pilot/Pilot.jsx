@@ -6,7 +6,7 @@ const Pilot = () => {
       <div className="section__wrapper animate__animated animate__fadeIn">
         <div className="info_box">
           <h3>Pilot</h3>
-          <h1>Victor <br/> Glover</h1>
+          <h1>Victor Glover</h1>
           <p>
             Pilot on the first operational flight of the SpaceX Crew Dragon to
             the International Space Station. Glover is a commander in the U.S.

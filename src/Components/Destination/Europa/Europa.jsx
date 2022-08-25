@@ -3,11 +3,7 @@ import "./index.css";
 const Europa = () => {
   return (
     <>
-      <div className="section__wrapper animate__animated animate__fadeIn">
-        <img
-          className="sectionImg"
-          src={require("../../../Assets/destination/image-europa.png")}
-        />
+      <div  className="section__wrapper animate__animated animate__fadeIn">
         <div className="info_box">
           <h1>europa</h1>
           <p>
@@ -31,6 +27,12 @@ const Europa = () => {
               <div className="infoTravel_text">3 years</div>
             </div>
           </div>
+        </div>
+        <div className="img_wrapper">
+          <img
+            className="sectionImg"
+            src={require("../../../Assets/destination/image-europa.png")}
+          />
         </div>
       </div>
     </>

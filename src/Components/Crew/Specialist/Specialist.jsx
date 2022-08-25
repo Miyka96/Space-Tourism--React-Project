@@ -6,7 +6,7 @@ const Specialist = () => {
       <div className="section__wrapper animate__animated animate__fadeIn">
         <div className="info_box">
           <h3>Mission Specialist </h3>
-          <h1>MARK SHUTTLEWORTH</h1>
+          <h1>MARK SHUTTLE</h1>
           <p>
             Mark Richard Shuttleworth is the founder and CEO of Canonical, the
             company behind the Linux-based Ubuntu operating system. Shuttleworth

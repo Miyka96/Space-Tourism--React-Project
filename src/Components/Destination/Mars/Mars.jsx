@@ -4,10 +4,6 @@ const Mars = () => {
   return (
     <>
       <div className="section__wrapper animate__animated animate__fadeIn">
-        <img
-          className="sectionImg"
-          src={require("../../../Assets/destination/image-mars.png")}
-        />
         <div className="info_box">
           <h1>Mars</h1>
           <p>
@@ -30,6 +26,12 @@ const Mars = () => {
               <div className="infoTravel_text">9 months</div>
             </div>
           </div>
+        </div>
+        <div className="img_wrapper">
+          <img
+            className="sectionImg"
+            src={require("../../../Assets/destination/image-mars.png")}
+          />
         </div>
       </div>
     </>
