@@ -88,7 +88,7 @@
   text-transform: uppercase;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments pc-small screens && tablets */
 
 @media screen and (max-width: 1161px) {
   .section__wrapper > .sectionImg {
@@ -106,6 +106,7 @@
   }
   .mainMenuLi {
     padding: 0 25px;
+    line-height: 75px;
   }
   .sectionImg {
     height: 56%;
@@ -230,5 +231,49 @@
   }
   #Titan .infoTravel_box{
     padding-bottom: 28px;
+  }
+}
+
+/* small tablets && mobile */
+
+@media screen and (max-width: 556px){
+  .mainMenuLi{
+    padding: 0 10px;
+  }
+  .homeSection.animate__animated.animate__fadeIn{
+    padding: 0;
+  }
+  .text_wrapper{
+    margin: 0 10px;
+  }
+  .text_wrapper>h5{
+    font-size: 20px;
+  }
+  .text_wrapper>h1{
+    font-size: 45px;
+  }
+  .text_wrapper>p{
+    font-size: 18px;
+    width: 300px;
+  }
+  .mainBtn{
+    width: 200px;
+    height: 200px;
+  }
+  .secondMenuUl{
+    gap: 25px;
+  }
+
+  #Space-capsule .img_wrapper{
+    height: 200px;
+  }
+  #Spaceport .img_wrapper{
+    height:200px;
+  }
+  #Launch-vehicle .img_wrapper{
+    height: 200px;
+  }
+  .sectionImg{
+    height: 45%;
   }
 }

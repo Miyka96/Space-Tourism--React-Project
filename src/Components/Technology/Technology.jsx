@@ -18,7 +18,7 @@ const Technology = () => {
           navList={technologyMenu}
           onClick={setTechnology}
           liClass="secondMenuLi nav_text"
-          ulClass="destinationUl"
+          ulClass="secondMenuUl"
           currentTechnology={technology}
         />
   

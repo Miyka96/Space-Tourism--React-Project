@@ -58,9 +58,11 @@
         justify-content: center;
         margin: 0 50px;
         text-align: center;
+        width:500px;
     }
     .text_wrapper>p{
-        font-size: 16px;
+        font-size: 18px;
+        width: 500px;
     }
     .text_wrapper>h5{
         font-size: 30px;

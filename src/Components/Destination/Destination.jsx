@@ -20,7 +20,7 @@ const Destination = () => {
           navList={destinationMenu}
           onClick={setDestination}
           liClass="secondMenuLi nav_text"
-          ulClass="destinationUl"
+          ulClass="secondMenuUl"
           currentDestination= {destination}
         ></Navbar>
       {(() => {

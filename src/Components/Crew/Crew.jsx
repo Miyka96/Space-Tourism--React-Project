@@ -19,7 +19,7 @@ const Crew = () => {
         navList={crewMenu}
         onClick={setCrew}
         liClass="secondMenuLi nav_text"
-        ulClass="destinationUl"
+        ulClass="secondMenuUl"
         currentCrew={crew}
       />
 
