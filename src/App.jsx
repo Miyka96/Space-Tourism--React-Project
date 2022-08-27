@@ -15,6 +15,13 @@ function App() {
   const explore = () => {
     setSection("Destination");
   };
+  const [mobileMenu, setMobileMenu] = useState("");
+  const mobileActive = () => {
+    setMobileMenu("active");
+    if (mobileMenu==="active") {
+      setMobileMenu("")
+    }
+  }
 
   return (
     <div className="App">
@@ -22,38 +29,44 @@ function App() {
         className="animate__animated animate__fadeIn"
         sectionId={section}
       >
-            <Navbar
-              navList={mainMenu}
-              onClick={setSection}
-              liClass={["mainMenuLi nav_text"]}
-              ulClass="mainMenuUl"
-              currentSect={section}
-            >
-              <MenuDecoration />
-            </Navbar>
+        <div onClick={mobileActive} class={"hamburger" + " " + mobileMenu }>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
 
-            {(() => {
-              switch (section) {
-                case "Home":
-                  return (
-                    <Home>
-                      <Button onClick={explore}>Explore</Button>
-                    </Home>
-                  );
-                case "Destination":
-                  return <Destination />;
-                case "Crew":
-                  return <Crew />;
-                case "Technology":
-                  return <Technology />;
+        <Navbar
+          navList={mainMenu}
+          onClick={setSection}
+          liClass={"mainMenuLi nav_text"}
+          ulClass={"mainMenuUl" + " " + mobileMenu}
+          currentSect={section}
+          mobileMenu={mobileActive}
+        >
+          <MenuDecoration />
+        </Navbar>
 
-                default:
-                  return <Home />;
-              }
-            })()}
+        {(() => {
+          switch (section) {
+            case "Home":
+              return (
+                <Home>
+                  <Button onClick={explore}>Explore</Button>
+                </Home>
+              );
+            case "Destination":
+              return <Destination />;
+            case "Crew":
+              return <Crew />;
+            case "Technology":
+              return <Technology />;
+
+            default:
+              return <Home />;
+          }
+        })()}
       </Section>
     </div>
-
   );
 }
 
