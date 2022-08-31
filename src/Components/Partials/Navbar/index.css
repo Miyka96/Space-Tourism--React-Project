@@ -1,5 +1,4 @@
 .nav{
-    padding-top: 20px;
     display:flex;
     justify-content:space-between;
 }
@@ -161,5 +160,25 @@
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media only screen and (max-width:450px){
+    #Crew>.content__wrapper>.section__wrapper>.info_box{
+        padding-top:50px;
+        height: 280px;
+    }
+}
+
+@media only screen and (min-width:900px){
+    .info_box{
+        padding-top: 150px!important;
+    }
+    #Commander>.section__wrapper>.img_wrapper>.sectionImg{
+        transform: translateY(-60px);
+    }
+    #Flight-Engineer>.section__wrapper>.img_wrapper>.sectionImg{
+        transform: translateY(35px);
     }
 }
