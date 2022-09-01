@@ -359,4 +359,64 @@
     height: 100%;
   }
 }
+@media screen and (min-width:300px) and (min-height:450px) {
+  .nav_text{
+    font-size: 70%!important;
+    width:auto;
+  }
+  .info_box{
+    padding: 0;
+    padding-top:0 !important;
+  }
+  .info_box>h1{
+    font-size: 1.5rem;
+  }
+  .info_box>p{
+    font-size: 0.8rem;
+  }
+  .infoTravel_heading{
+    font-size: 0.9rem;
+  }
+  .infoTravel_text{
+    font-size: 0.9rem;
+  }
+  #Crew .sectionImg{
+    height: 40%;
+  }
+  #Technology .sectionImg{
+    height: 100%;
+  }
+  #Crew>.content__wrapper>.section__wrapper>.info_box{
+    height: 175px;
+  }
+  #Commander>.section__wrapper>.info_box{
+    height: 150px !important;
+  }
+  #Technology>.content__wrapper>.section__wrapper>.img_wrapper{
+    height: 120px;
+  }
+  .homeSection>.text_wrapper>h5{
+    font-size: 15px;
+  }
+  .homeSection>.text_wrapper>h1{
+    font-size: 38px;
+  }
+  .homeSection>.text_wrapper>p{
+    font-size:13px;
+  }
+  .mainBtn{
+    width: 125px !important;
+    height: 125px !important;
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (min-width:320px) and (min-height:568px) {
+  #Crew>.content__wrapper>.section__wrapper{
+    grid-row-gap: 40px;
+  }
+  #Crew>.content__wrapper>.section__wrapper>.info_box{
+    margin-top: 20px;
+  }
+}
 
