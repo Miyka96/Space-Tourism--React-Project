@@ -277,7 +277,7 @@
     height: 45%;
   }
 }
-
+/* desktop */
 @media screen and (min-width:1400px) {
   .nav{
     padding: 30px 0;
@@ -359,6 +359,8 @@
     height: 100%;
   }
 }
+
+/* mobile */
 @media screen and (max-width:300px) and (min-height:450px) {
   .nav_text{
     font-size: 70%!important;
@@ -420,3 +422,22 @@
   }
 }
 
+@media screen and (min-width:1024px) and (min-height:700px){
+  #Crew>.content__wrapper>.section__wrapper>.info_box{
+    margin-top: 150px;
+  }
+  #Crew>.content__wrapper>.section__wrapper>.img_wrapper>.sectionImg{
+    height:85%;
+    margin-top: 50px;
+  }
+  #Destination>.content__wrapper>.section__wrapper>.info_box{
+    margin-top: 150px;
+  }
+}
+
+@media screen and (min-height:1000px) {
+  #Crew>.content__wrapper>.section__wrapper>.img_wrapper>.sectionImg{
+    height: 100%;
+    margin-top: 100px;
+  }
+}
