@@ -71,3 +71,22 @@
         font-size: 70px;
     }
 }
+@media screen and (min-width:1400px) {
+    #Home>.nav>.mainMenuUl>.nav_text{
+        font-size: 23px;
+    }
+    .text_wrapper>h5{
+        font-size: 35px;
+    }
+    .text_wrapper>h1{
+        font-size:160px;
+    }
+    .text_wrapper>p{
+        font-size: 25px;
+    }
+    .mainBtn{
+        width: 300px !important;
+        height: 300px !important;
+        font-size: 38px;
+    }
+}
